@@ -1,0 +1,280 @@
+*{
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #302729;
+}
+
+.scroll-menu{
+    display: none;
+}
+
+.scroll-menu .close{
+    padding: 40px 10px;
+    float: right;
+}
+
+.scroll-menu .close .c-line{
+    width: 40px;
+    border-radius: 10px;
+    height: 3px;
+    background-color: #f37b83;
+}
+
+.scroll-menu .close .c-line:first-child{
+    transform: rotate(135deg);
+}
+
+.scroll-menu .close .c-line:last-child{
+    transform: rotate(45deg) translateY(-3px);
+}
+
+
+.aside{
+    background-color: #362b2e;
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    float: left;
+}
+
+.burger{
+    display: none;
+    width: 30px;
+    padding:30px 0px 0px 0px;
+    
+}
+
+.b-line{
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    margin: 6px 0;
+}
+
+.b-line:nth-child(2){
+    width: 10px;
+}
+
+.b-line:nth-child(3){
+    width: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.info-group{
+    /* margin: 50px 0 0 50px; */
+    margin: 20% 0 0 15%;
+}
+
+.info-group .info-title{
+    color: #f37b83;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.info-group .info-content{
+    color: white;
+}
+
+.cover{
+    height: 100vh;
+    /* background-image: url("/img/macbook_3-wallpaper-5120x3200.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.cover-info{
+    height: 100vh;
+    /* background-color: white; */
+    padding: 10% 5%;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cover-info h1{
+    color: #f37b83;
+    font-weight: lighter;
+}
+
+.cover-info span{
+    line-height: 80px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cover-info h4{
+    color: #f37b83;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 60%;
+}
+
+.cover-info .links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cover-info .links  a{
+    color: #9496ee;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-decoration: none;  
+}
+
+.cover-info .links  a:hover{
+    color: #f37b83;
+}
+
+.cover-2{
+    /* height: 100vh; */
+    background-color: #302729;
+    margin: 0;
+}
+
+.cover-2 .card-group{
+    width: 70%;
+}
+
+.cover-2 .about{
+    width: 30%;
+}
+
+.cover-2 .my-card{
+    margin: auto;
+    background-color: #362b2e;
+    padding: 4%;
+    margin-left: 8%;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.cover-2 .my-card i{
+    color: rgb(122, 122, 122);
+    font-size: 80px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+    transition-property:text-shadow color;
+}
+
+.cover-2 .my-card h1{
+    color: #f37b83;
+    margin-bottom: 20px;
+}
+
+.cover-2 .my-card p{
+    color: #a88590;
+    line-height: 30px;
+}
+
+.cover-2 .my-card:hover i{
+    color: #9496ee;
+    text-shadow: 0 0 10px #9496ee55;
+}
+
+.cover-2 .card-group .links{
+    /* margin-left: 8%;
+    min-width: 300px;
+    width: 40%; */
+    padding-left: 10%;
+}
+
+.cover-2 .card-group .links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #f37b83;
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.cover-2 .card-group .links a::after{
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    border: 2px solid #f37b83;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.4s;
+    /* top:70%;
+    right: 90%;
+    bottom: 20%;
+    left: 5%; */
+
+    top:25%;
+    right: 90%;
+    bottom: 30%;
+    left: 5%;
+
+    transition-property: top bottom right left;
+}
+
+.cover-2 .card-group .links a:hover::after{
+
+    top: 2px;
+    bottom: 2px;
+    right: -10px;
+    left: 2px;
+}
+
+.cover-2 .about{
+    padding: 50px;
+}
+
+.cover-2 .about p{
+    color: #a88590;
+}
+
+.cover-3{
+    margin-top: 100px;
+}
+
+.cover-3 h1{
+    color: #f37b83;
+}
+
+.cover-3 h2{
+    color: #a88590;
+}
+
+.cover-3 p{
+    color: #a88590;
+}
+
+.cover-3 .line .line-2{
+    width: 5px;
+    height: 100%;
+    /* margin-top: 30%; */
+    background-color: #a88590;
+    float: right;
+}
+
+.cover-3 .tech-info{
+    cursor: pointer;
+}
+
+.cover-3 .tech-info:hover .line .line-2 {
+    background-color: #9496ee;
+}

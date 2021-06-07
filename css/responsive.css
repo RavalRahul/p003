@@ -1,0 +1,103 @@
+
+@media (max-width:1260px){
+    .cover-2 .card-group{
+        width: 100%;
+    }
+
+    .cover-2 .about{
+        width:100%;
+    }
+
+    .cover-2 .my-card{
+        margin: 0 4%;
+     }
+
+     .cover-2 .card-group .links{
+         padding: 0 5%;
+     }
+
+     .cover-info h4{
+         width: 80%;
+     }
+
+     .cover-3{
+        margin-top: unset;
+    }
+
+}
+
+@media (max-width:992px){
+    
+    .cover-info h4{
+        width: 90%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .cover-2 .my-card{
+        margin: auto;
+        display: block;
+        width: 350px;
+    }
+
+    .cover-2 .card-group .links{
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    body{
+        width: 100%;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .scroll-menu{
+        z-index: 1;
+        display: block;
+        position: fixed;
+        background-color: #362b2e;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;      
+        transform: translate(-100%);  
+        transition: 0.3s;  
+    }
+
+    .t-scroll-menu{
+        /* display: block; */
+        transform: translate(0);
+    
+    }
+
+
+    .burger{
+        display: block;
+        margin: auto;
+    }
+
+
+
+}
+
+@media (max-width:576px){
+    .aside{
+        height: unset;
+    }
+    .burger{
+        padding: 10px 0;
+        margin: unset;
+    }
+    .cover-info{
+        width: 100%;
+    }
+    .cover{
+        background-image: none;
+    }
+
+}
